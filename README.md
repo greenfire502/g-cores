@@ -1,2 +1,2 @@
 # g-cores
-xcdasd
+建行卡

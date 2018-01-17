@@ -1,0 +1,24 @@
+{
+  "bannar": [
+    {
+      "id": 1,
+      "bannar_img": "http://dummyimage.com/1903x420/9479f2"
+    },
+    {
+      "id": 2,
+      "bannar_img": "http://dummyimage.com/1903x420/80f279"
+    },
+    {
+      "id": 3,
+      "bannar_img": "http://dummyimage.com/1903x420/f279a4"
+    },
+    {
+      "id": 4,
+      "bannar_img": "http://dummyimage.com/1903x420/79c7f2"
+    },
+    {
+      "id": 5,
+      "bannar_img": "http://dummyimage.com/1903x420/eaf279"
+    }
+  ]
+}

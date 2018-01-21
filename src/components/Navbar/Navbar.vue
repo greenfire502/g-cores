@@ -26,7 +26,7 @@
                 <input type="text" name="keyword" placeholder="Search">
             </form>
             <ul class="nav navbar_nav navbar_right">
-                <li><a href="#new">新闻</a></li>
+                <li><a href="#xinwen">新闻</a></li>
                 <li><a href="#article">文章</a></li>
                 <li><a href="#audio">电台</a></li>
                 <li><a href="#video">视频</a></li>

@@ -1,5 +1,5 @@
 <template>
-  <div class="New">
+  <div class="Xinwen">
     新闻
   </div>
 </template>

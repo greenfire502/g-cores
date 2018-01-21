@@ -156,7 +156,7 @@
             </div>
         </div>
       </div>
-      <div class="banner banner-first" id="news">
+      <div class="banner banner-first" id="xinwen">
         <img alt="机核新闻" data-stellar-ratio="1.3" src="https://alioss.g-cores.com/assets/banner/news-4d4b4769020533addc82722ef905e27573570f11cece52dd2715afb545e6cb39.jpg" style="transform: translate3d(0px, -148.528px, 0px);">
         <span>NEWS</span>
       </div>
@@ -263,7 +263,7 @@
               <div class="showcase showcase-original showcase-audio">
                 <div class="showcase_time">
                     <span>
-                        <div class="type">ARTICLE</div>
+                        <div class="type">AUDIO</div>
                     </span>
                     {{item.time}}
                 </div>
@@ -311,7 +311,7 @@
               <div class="showcase showcase-original showcase-video">
                 <div class="showcase_time">
                     <span>
-                        <div class="type">ARTICLE</div>
+                        <div class="type">VIDEO</div>
                     </span>
                     {{item.time}}
                 </div>
@@ -438,7 +438,7 @@
 
   /* 话题 */
   .topicEntry {
-    height: 123px;
+    /* height: 123px; */
     /* background: gold; */
     border: 1px solid #ddd;
     margin-bottom: 30px;
@@ -834,6 +834,9 @@
     -webkit-transition: transform ease 0.8s;
     -o-transition: transform ease 0.8s;
     transition: transform ease 0.8s; */
+  }
+  .mint-swipe {
+    height: 120px;
   }
 </style>
 

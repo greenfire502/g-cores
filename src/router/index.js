@@ -9,7 +9,7 @@ const signIn = resolve => require(['pages/account/signIn.vue'], resolve)
 // 注册
 const signUp = resolve => require(['pages/account/signUp.vue'], resolve)
 // 新闻
-const New = resolve => require(['pages/New/New.vue'], resolve)
+const Xinwen = resolve => require(['pages/Xinwen/Xinwen.vue'], resolve)
 // 电台
 const Audio = resolve => require(['pages/Audio/Audio.vue'], resolve)
 // 文章
@@ -36,8 +36,8 @@ export default new Router({
       component: signUp
     },
     {
-      path: '/new',
-      component: New
+      path: '/xinwen',
+      component: Xinwen
     },
     {
       path: '/audio',

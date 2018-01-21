@@ -2,7 +2,7 @@
   <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar_header">
-            <button type="button" class="navbar_toggle collapsed" data-toggle="collapse" data-target="#j_navbarCollapse" aria-expanded="false">
+            <button type="button" class="navbar_toggle collapsed" data-toggle="collapse" data-target="#j_navbarCollapse" aria-expanded="false" v-on:click="toggle()">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -16,7 +16,7 @@
                 <img src="https://alioss.g-cores.com/assets/logo-new-0b66d0ff8fa364ff567e08b95ec448b14220b9d5612d7563ece5226b7443068b.png" alt="">
             </a>    
         </div>
-        <div class="collapse collapsed navbar_collapse collapse in">
+        <div class="collapse collapsed navbar_collapse collapse in" v-show="isShow">
             <ul class="nav navbar_nav navbar_right">
                 <li><a href="#account/signin">登录</a></li>
                 <li><a href="#account/signup">注册</a></li>
@@ -67,7 +67,7 @@
             overflow: visible !important;
         }
         .navbar_collapse {
-            padding: 20px !important;
+            /* padding: 20px !important; */
             width: auto;
             border-top: 0;
             box-shadow: none;
@@ -152,7 +152,7 @@
     }
 
     .navbar_collapse {
-        padding: 80px;
+        padding: 5px;
     }
 
     .sr-only {
@@ -184,6 +184,7 @@
     .navbar_search {
         padding: 10px;
         color: #999;
+        margin-top: 15px;
     }
 
     .nav>li {
@@ -273,21 +274,14 @@
         border-width: 0 0 1px;
     }
 
-    /* .navbar_collapse{
-        
-    } */
-
-    .collapse.in {
-        display: none;
-        visibility: visible;
-    }
+  
 
     .navbar-default .navbar_collapse, .navbar-default .navbar_form {
         border-color: #f0f0f0;
     }
     .container>.navbar_header, .container>.navbar_collapse, .container-fluid>.navbar_header, .container-fluid>.navbar_collapse {
         margin-right: -15px;
-        margin-left: -15px;
+        /* margin-left: -15px; */
     }
 
     .navbar-fixed-top .navbar_collapse, .navbar-fixed-bottom .navbar_collapse {
@@ -299,13 +293,28 @@
         visibility: hidden;
     } */
 
+     .collapse.in {
+        /* display: none; */
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    /* .collapse {
+        display: none;
+        visibility: hidden;
+    } */
+
     .navbar_collapse {
         overflow-x: visible;
-        padding-right: 15px;
+        /* padding-right: 15px; */
         padding-left: 15px;
         border-top: 1px solid transparent;
         box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
         -webkit-overflow-scrolling: touch;
+    }
+
+    .navbar_nav {
+        margin: 14.25px -15px;
     }
 
     .navbar_brand {
@@ -370,7 +379,16 @@
 
   <script>
   export default {
-    
+    data () {
+        return {
+            isShow: false
+        }
+    },
+    methods: {
+        toggle: function(){
+            this.isShow = !this.isShow;
+        }
+    }
   }
   </script>
   

@@ -20,6 +20,12 @@ Vue.component(CarouselItem.name, CarouselItem)
 import axios from 'axios'
 Vue.prototype.$http = axios
 
+// 引入mint-ui
+import MintUI from 'mint-ui'
+import 'mint-ui/lib/style.css'
+
+Vue.use(MintUI)
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
